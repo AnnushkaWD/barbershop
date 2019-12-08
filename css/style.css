@@ -15,6 +15,22 @@ body{
   background-repeat: no-repeat;
   }
 
-a{
-  text-decoration: none;
+  a{
+    text-decoration: none;
+  }
+.main-navigation{
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+  color: #ffffff;
+
 }
