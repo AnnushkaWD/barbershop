@@ -38,3 +38,13 @@ body{
 .user-navigation:focus{
   background-color: #242424;
 }
+.features-list{
+  list-style: none;
+}
+.features-item{
+  text-align: center;
+}
+.features-item h3{
+  font-size: 30px;
+  line-height: 42px;
+}
