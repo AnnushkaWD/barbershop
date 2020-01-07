@@ -29,6 +29,12 @@ body{
     background-color: #000000;
     border: none;
   }
+.button:hover,
+.button:focus,
+.button:active{
+  background-color: #663d15;
+}
+
 .main-navigation{
   font-size: 16px;
   line-height: 20px;
