@@ -99,5 +99,32 @@ body{
   color: #ffffff;
 
   background-color: #212121;
-  background-image: url("../img/patern-dark.png");
+  background-image: url("../img/pattern-dark.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+  .footer-contacts a{
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .footer-contacts a:hover,
+  .footer-contacts a:focus{
+    text-decoration: none;
+  }
+  .footer-social{
+    text-align: center;
+  }
+  .footer-social ul{
+    list-style: none;
+  }
+  .social-button{
+    color: #ffffff;
+  }
+  .footer-copyright{
+    text-align: center;
+  }
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+  color:#000000;
+  background-color: #ffffff;
 }
