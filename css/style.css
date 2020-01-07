@@ -91,3 +91,13 @@ body{
   background-color: transparent;
   border: 2px solid #000000;
 }
+.appointment-item input:focus{
+  border-color: #663d15;
+}
+
+.main-footer{
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url("../img/patern-dark.png");
+}
