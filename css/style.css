@@ -18,6 +18,17 @@ body{
   a{
     text-decoration: none;
   }
+.button{
+    font: inherit; /*inherit- значит принудительное наследование от родителя (от body)*/
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: center;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border: none;
+  }
 .main-navigation{
   font-size: 16px;
   line-height: 20px;
@@ -47,4 +58,30 @@ body{
 .features-item h3{
   font-size: 30px;
   line-height: 42px;
+}
+.index-columns{
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("../img/layer1.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.index-columns h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+.news-list {
+  list-style: none;
+}
+.news-item time{
+  text-transform: none;
+}
+.gallery-content{
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+.appointment-item input{
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000000;
 }
