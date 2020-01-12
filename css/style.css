@@ -128,4 +128,43 @@ body{
   color:#000000;
   background-color: #ffffff;
 }
-/* 2.16*/
+
+.modal{
+  color: #000000;
+
+  background-color: #f8f3f0;
+  background-image: url("../img/layer1.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  font:inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.input-form:focus{
+  border-color: #663d15;
+}
+.login-checkbox:hover,
+.login-checkbox:focus{
+  color: #663d15;
+}
+
+.restore{
+  #color: #000000;
+  text-decoration: underline;
+}
+.restore:hover,
+.restore:focus{
+  text-decoration: none;
+}
