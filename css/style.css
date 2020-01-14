@@ -10,9 +10,18 @@ body{
   text-transform: uppercase;
 
   background-color: #000000;
-   background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: top/center;
   background-repeat: no-repeat;
+  }
+.internal-page{
+
+    color: #000000;
+
+    background-color: #f8f5f2;
+    background-image: url("../img/Layer 1.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
   }
 
   a{
