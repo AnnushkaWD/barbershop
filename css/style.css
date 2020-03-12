@@ -219,26 +219,41 @@ body{
 .user-navigation:focus{
   background-color: #242424;
 }
+.features{
+  margin-bottom: 80px;
+}
 .features-list{
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .features-item{
   text-align: center;
+  width: 300px;
 }
 .features-item h3{
   font-size: 30px;
   line-height: 42px;
 }
 .index-columns{
+  display: flex;
+  justify-content: space-between;
   color: #000000;
   background-color: #f8f5f2;
   background-image: url("../img/layer1.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+  padding: 50px 80px;
+  margin-bottom: 35px;
 }
 .index-columns h2{
   font-size: 30px;
   line-height: 42px;
+}
+.news{
+  width: 380px;
 }
 .news-list {
   list-style: none;
@@ -246,9 +261,18 @@ body{
 .news-item time{
   text-transform: none;
 }
+.gallery{
+  width: 300px;
+}
 .gallery-content{
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+.contacts{
+  width: 380px;
+}
+.appointment{
+  width: 300px;
 }
 .appointment-item input{
   font: inherit;
