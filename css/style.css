@@ -194,6 +194,7 @@ body{
 .container{
   width: 940px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 }
@@ -285,11 +286,21 @@ body{
 
 .main-footer{
   color: #ffffff;
+  padding: 60px 0;
+  margin-top: 65px;
 
   background-color: #212121;
   background-image: url("../img/pattern-dark.png");
   background-position: 0 0;
   background-repeat: repeat;
+}
+.main-footer .container{
+  display: flex;
+}
+.footer-contacts{
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
   .footer-contacts a{
     color: #ffffff;
@@ -301,6 +312,7 @@ body{
   }
   .footer-social{
     text-align: center;
+    width: 145px;
   }
   .footer-social ul{
     list-style: none;
@@ -310,6 +322,8 @@ body{
   }
   .footer-copyright{
     text-align: center;
+    width: 150px;
+    margin-left: auto;
   }
 .footer-copyright .button:hover,
 .footer-copyright .button:focus{
