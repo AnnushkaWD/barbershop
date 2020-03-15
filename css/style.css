@@ -25,12 +25,38 @@ body{
     background-position: 0 0;
     background-repeat: repeat;
   }
+  .internal-page .main-header{
+    margin-bottom: 50px;
+    background-color: #000000;
+  }
+  .internal-page .main-header-logo{
+    order: 0;
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
+  }
+  .internal-page .main-navigation{
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .internal-page .user-navigation{
+    margin-left: auto;
+  }
+
+
   .page-title{
     font-size: 30px;
     line-height: 42px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
   }
   .breadcrumbs{
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
   }
   .breadcrumbs a{
     color: #000000;
@@ -41,6 +67,13 @@ body{
   }
   .breadcrumbs-current{
     color: #aba9a7;
+  }
+  .catalog-columns{
+    display: flex;
+    justify-content: space-between;
+  }
+  .filters{
+    width: 180px;
   }
   .filters fieldset{
     border: none;
@@ -61,12 +94,26 @@ body{
     color: #000000;
     opacity: 0.5;
   }
+  .catalog{
+    width: 700px;
+  }
   .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
   }
   .catalog-item{
     background-color: #f7f7f7;
     box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .catalog-item:nth-child(3n){
+    margin-right: 0;
   }
   .catalog-item:hover{
     box-shadow: 0 0 20px rgba(0, 1, 1, 0.3);
@@ -94,6 +141,9 @@ body{
   }
   .pagination-list{
     list-style: none;
+    margin: 0;
+    padding: 0;
+
   }
   .pagination-list a{
     color: #ffffff;
@@ -139,6 +189,9 @@ body{
 }
 .product-info ul{
   list-style: none;
+}
+.inner-page .main-footer{
+  margin-top: 45px;
 }
   /* внутренняя страница shop закончена*/
   a{
