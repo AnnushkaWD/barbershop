@@ -194,6 +194,18 @@ body{
   margin-top: 45px;
 }
   /* внутренняя страница shop закончена*/
+
+  /*внутренняя страница item*/
+.product-photos{
+  width: 460px;
+}
+
+.product-info{
+  width: 390px;
+}
+
+    /*внутренняя страница item закончена*/
+
   a{
     text-decoration: none;
   }
