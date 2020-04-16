@@ -281,14 +281,41 @@ input[type="radio"].visually-hidden{
   margin: 0 auto;
 }
 
-}
+
 .site-navigation{
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
+
   width: 620px;
 }
 .user-navigation {
+  display: flex;
   width: 140px;
+}
+
+.user-navigation .login-link{
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before{
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+
+  width: 16px;
+  height: 18px;
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before{
+  opacity: 1;
 }
 .site-navigation,
 .user-navigation {
@@ -298,6 +325,9 @@ input[type="radio"].visually-hidden{
 }
 .site-navigation a,
 .user-navigation a{
+  display: block;
+  padding: 25px 20px;
+  vertical-align: middle;
   color: #ffffff;
 }
 .site-navigation:hover
