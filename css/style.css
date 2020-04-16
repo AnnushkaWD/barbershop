@@ -283,6 +283,8 @@ input[type="radio"].visually-hidden{
 
 }
 .site-navigation{
+  display: flex;
+  flex-wrap: wrap;
   width: 620px;
 }
 .user-navigation {
