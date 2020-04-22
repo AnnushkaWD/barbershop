@@ -230,15 +230,18 @@ input[type="radio"].visually-hidden{
 
 
 .button{
-    font: inherit; /*inherit- значит принудительное наследование от родителя (от body)*/
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 16px;
+  font: inherit; /*inherit- значит принудительное наследование от родителя (от body)*/
 
-    text-align: center;
-    color: #ffffff;
-    vertical-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: center;
+  text-transform: uppercase;
 
-    background-color: #000000;
-    border: none;
+  background-color: #000000;
+  border: none;
   }
 .button:hover,
 .button:focus,
@@ -351,21 +354,45 @@ flex-wrap: wrap;
   width: 300px;
 }
 .features-item h3{
+  position: relative;
+  margin:0;
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 42px;
+}
+.features-item h3::after{
+  content: "";
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  transform: rotate(45deg);
+
+  background-color: #ffffff;
+}
+.features-item p{
+  margin: 0 10px;
 }
 .index-columns{
   display: flex;
   justify-content: space-between;
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url("../img/layer1.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: url("../img/layer1.jpg"),
+  url("../img/line.png");
+  background-position: 0 0, center;
+  background-repeat: repeat. no-repeat ;
   padding: 50px 80px;
   margin-bottom: 35px;
 }
 .index-columns h2{
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -373,7 +400,17 @@ flex-wrap: wrap;
   width: 380px;
 }
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
   list-style: none;
+
+}
+.news-item{
+  margin-bottom: 25px;
+}
+.news-item p{
+  margin: 0;
 }
 .news-item time{
   text-transform: none;
