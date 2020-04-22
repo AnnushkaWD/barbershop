@@ -248,6 +248,12 @@ input[type="radio"].visually-hidden{
 .button:active{
   background-color: #663d15;
 }
+.button.disabled,
+.button:disabled{
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
+}
 .main-header{
   margin-bottom: 75px;
 }
@@ -419,11 +425,40 @@ flex-wrap: wrap;
   width: 300px;
 }
 .gallery-content{
+  height: 164px;
+  margin: 0;
   background-color: #cccccc;
   border: 7px solid #ffffff;
 }
+.gallery-content img{
+  width: 286px;
+  height: 164px;
+}
+.gallery-container{
+  position: relative;
+  height: 260px;
+
+}
+.gallery-button{
+  box-sizing: border-box;
+  position: absolute;
+  width: 140px;
+  margin: 0;
+  bottom: 0;
+}
+.gallery-button-back{
+  left: 0;
+}
+.gallery-button-next{
+  right: 0;
+}
 .contacts{
   width: 380px;
+}
+.contacts p{
+  margin: 0;
+  margin-bottom: 25px;
+  
 }
 .appointment{
   width: 300px;
