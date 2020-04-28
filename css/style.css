@@ -38,7 +38,7 @@ input[type="radio"].visually-hidden{
   clip: rect(0 0 0);
   overflow: hidden;
 }
-  /* внутренняя страница shop*/
+  /* внутренняя страница item*/
 .internal-page{
 
     color: #000000;
@@ -128,28 +128,7 @@ input[type="radio"].visually-hidden{
     display: flex;
     justify-content: space-between;
   }
-  .filters{
-    width: 180px;
-  }
-  .filters fieldset{
-    border: none;
-  }
-  .filters legend{
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .filters ul{
-    list-style: none;
-    line-height: 18px;
-  }
-  .filter-input:hover + label,
-  .filter-input:focus + label{
-    color: #663d15;
-  }
-  .filter-input:disabled + label{
-    color: #000000;
-    opacity: 0.5;
-  }
+
   .catalog{
     width: 700px;
   }
@@ -279,9 +258,11 @@ input[type="radio"].visually-hidden{
   background-color: #e5e5e5;
   box-sizing: border-box;
 }
+
 .product-info .product-text {
   margin-bottom: 35px;
 }
+
 .product-info .product-price {
   display: flex;
   margin-bottom: 63px;
@@ -332,12 +313,12 @@ input[type="radio"].visually-hidden{
 
   background-color: #000000;
 }
-.inner-page .main-footer{
+.internal-page .main-footer{
   margin-top: 45px;
 }
-  /* внутренняя страница shop закончена*/
+  /* внутренняя страница item закончена*/
 
-  /*внутренняя страница item*/
+  /*внутренняя страница shop*/
 .product-photos{
   width: 460px;
 }
@@ -346,7 +327,44 @@ input[type="radio"].visually-hidden{
   width: 390px;
 }
 
-    /*внутренняя страница item закончена*/
+}
+.filters{
+  width: 180px;
+}
+.filters fieldset{
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+}
+.filter legend{
+  margin-bottom: 26px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+.filters ul{
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  line-height: 18px;
+}
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+.filter-input:hover + label,
+.filter-input:focus + label{
+  color: #663d15;
+}
+.filter-input:disabled + label{
+  color: #000000;
+  opacity: 0.5;
+}
+
+    /*внутренняя страница shop закончена*/
 
 
 
@@ -690,7 +708,9 @@ border: 2px solid #000000;
   .footer-copyright{
     text-align: center;
     width: 150px;
+    margin: 0;
     margin-left: auto;
+
   }
   .footer-copyright b{
     display: block;
