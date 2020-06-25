@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
@@ -24,7 +24,7 @@
         </ul>
           <ul class="user-navigation">
             <li>
-              <a class="login-link" href="login.html">Вход</a>
+              <a class="login-link" href="#">Вход</a>
             </li>
           </ul>
         </div>
@@ -104,7 +104,7 @@
             ПН-ПТ: с 10:00 до 22:00 <br>
             СБ-Вс: с 10:00 до 19:00
           </p>
-          <a class="button" href="map.html">Как проехать</a>
+          <a class="button contacts-button-map" href="map.html">Как проехать</a>
           <a class="button" href="contacts.html">Обратная связь</a>
         </section>
 
@@ -196,10 +196,15 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-      <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Коннюшенная 19/8 Санкт-Петербург">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511634.7094831512!2d29.534291675062278!3d59.93922592045905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46964730d11ed9e3%3A0x1c82ffc2f406bf1!2z0J_QtdGC0LXRgNCz0L7RhA!5e0!3m2!1sru!2sua!4v1592027704035!5m2!1sru!2sua" width="766" height="560"  tabindex="0">
+      </iframe>
+      <p class="visually-hidden">
+      <img src="img/map mask.png" width="780" height="560" alt="Офис компании по адресу ул. Большая Коннюшенная 19/8 Санкт-Петербург">
       </p>
       <button class="modal-close"type="button" name="button">Закрыть</button>
     </section>
+    <div class="modal-overlay"></div>
+    <script src="js/popup.js"></script>
+  
   </body>
 </html>

@@ -630,7 +630,7 @@ width: 620px;
   color: #000000;
   background-color: #f8f5f2;
   background-image: url("../img/line.png"),
-   url("../img/layer1.jpg");
+   url("../img/Layer 1.jpg");
   background-position: center,  0 0;
   background-repeat: no-repeat,  repeat;
   padding: 50px 80px;
@@ -833,12 +833,50 @@ border: 2px solid #000000;
   color: #000000;
 
   background-color: #f8f3f0;
-  background-image: url("../img/layer1.jpg");
+  background-image: url("../img/Layer 1.jpg");
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  display: none;
+  z-index: 2;
+
+}
+.modal-show{
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
+@keyframes bounce {
+  0% {transform: translateY(-200px);}
+    70% {transform: translateY(30px);}
+      90% {transform: translateY(-10px);}
+        100% {transform: translateY(0px);}
+
+}
+.modal-error{
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+  20%, 40%, 60%, 80% { transform: translateX(10px);}
+    }
+
+/* .modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+ */
 .modal-login{
   top: 120px;
   left: 50%;
@@ -906,14 +944,72 @@ border: 2px solid #000000;
   border: 2px solid #000000;
 }
 
+.login-icon-users{
+  background-image: url("../img/user.png");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+.login-icon-password{
+  background-image: url("../img/lock.png");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
 .input-form:focus{
   border-color: #663d15;
 }
+
+.login-checkbox{
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator{ /*если обычный в данное время скрытый чекбокс в фокусе, тогда наш новый чекбокс должен иметь такие параметры:  т.е. он будто бы передает фокус нашему новому чекбоксу*/
+  border-color: #663d15;
+  /*это два стандартных оутлайна для разных браузеров. первый -фаерфокс, второй - хром*/
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+/* + выбирает только один элемент которые следует за родителем, а ~ выбирает все элементы */
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+  transform: rotate(45deg);
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+  transform: rotate(-45deg);
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus{
   color: #663d15;
 }
-
+.login-form .login-password-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
 .restore{
   #color: #000000;
   text-decoration: underline;
@@ -921,4 +1017,20 @@ border: 2px solid #000000;
 .restore:hover,
 .restore:focus{
   text-decoration: none;
+}
+
+.modal-map{
+  top: 50%;
+  left: 50%;
+
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+  /* или можно сделать так:
+  transform: translate(-50%, -50%);*/
+}
+
+.modal-map p{
+  margin: 0;
 }
